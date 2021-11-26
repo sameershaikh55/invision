@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- == EXTERNAL LINKS START == -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<!-- == EXTERNAL LINKS END == -->
+		<title>Page one</title>
+	</head>
+	<body>
+		<!-- ======== SIDEBAR START ======== -->
+		<div
+			class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left"
+			style="width: 300px"
+			id="mySidebar"
+		>
+			<br />
+			<ul class="d-flex flex-column list-unstyled mb-0 px-3">
+				<li class="py-2">
+					<a
+						class="text-uppercase text-decoration-none color1 fw600 f20"
+						href=""
+						>תוֹרָה</a
+					>
+				</li>
+				<li class="py-2">
+					<a
+						class="text-uppercase text-decoration-none color1 fw600 f20"
+						href=""
+						>פרשוט</a
+					>
+				</li>
+				<li class="py-2">
+					<a
+						class="text-uppercase text-decoration-none color1 fw600 f20"
+						href=""
+						>סיפורים</a
+					>
+				</li>
+				<li class="py-2">
+					<a
+						class="text-uppercase text-decoration-none color1 fw600 f20"
+						href=""
+						>יותר...</a
+					>
+				</li>
+				<li class="py-2">
+					<div class="person_cont">
+						<i class="bi bi-person-lines-fill h1 color1"></i>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- ======== SIDEBAR END ======== -->
+
+		<!-- ======== HEADER START ======== -->
+		<div class="header_container bg_color1 rtl">
+			<div class="page_inner w-100">
+				<div class="container-fluid w-100">
+					<div class="d-flex justify-content-between align-items-center w-100">
+						<div class="d-flex align-items-center">
+							<div class="logo_container">
+								<div class="d-flex align-items-center">
+									<!-- HAMBERGER -->
+									<div class="d-block d-md-none">
+										<i
+											id="hamb"
+											onclick="w3_open()"
+											class="bi bi-list text-white display-4"
+										></i>
+										<i
+											style="display: none"
+											id="cross"
+											onclick="w3_close()"
+											class="bi bi-plus-lg text-white display-4"
+										></i>
+									</div>
+									<!-- HAMBERGER -->
+
+									<a class="text-decoration-none" href="index.html">
+										<h1 class="text-white mb-0">סֵמֶל</h1>
+										<!-- <img data-aos="zoom-in" src="./assets/images/logo.svg" alt="" /> -->
+									</a>
+								</div>
+							</div>
+							<div class="nav_container d-none d-md-block ms-4">
+								<ul class="d-flex list-unstyled mb-0">
+									<li>
+										<a class="text-white text-uppercase" href="index.html"
+											>תוֹרָה</a
+										>
+									</li>
+									<li>
+										<a
+											class="active text-white text-uppercase"
+											href="contact.html"
+											>פרשוט</a
+										>
+									</li>
+									<li>
+										<a class="text-white text-uppercase" href="service.html"
+											>סיפורים</a
+										>
+									</li>
+									<li>
+										<a class="text-white text-uppercase" href="">יותר...</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div
+							class="
+								d-flex
+								flex-column
+								align-items-center
+								justify-content-center
+							"
+						>
+							<details class="custom-select">
+								<summary class="radios">
+									<input
+										type="radio"
+										name="item"
+										id="default"
+										title="עברית"
+										checked
+									/>
+									<input type="radio" name="item" id="עברית" title="עברית" />
+									<input
+										type="radio"
+										name="item"
+										id="English"
+										title="English"
+									/>
+								</summary>
+								<ul class="list">
+									<li>
+										<label
+											class="
+												d-flex
+												align-items-center
+												justify-content-between
+												w-100
+												ltr
+											"
+											for="עברית"
+										>
+											<a
+												class="
+													text-decoration-none text-dark
+													d-flex
+													align-items-center
+													justify-content-between
+													w-100
+												"
+												href="institude.html"
+											>
+												עברית <img src="./assets/images/israel.jpg" alt="" />
+											</a>
+										</label>
+									</li>
+									<li>
+										<label
+											class="
+												d-flex
+												align-items-center
+												justify-content-between
+												w-100
+												ltr
+											"
+											for="English"
+										>
+											<a
+												class="
+													text-decoration-none text-dark
+													d-flex
+													align-items-center
+													justify-content-between
+													w-100
+												"
+												href="institude.en.html"
+											>
+												English <img src="./assets/images/united.png" alt="" />
+											</a>
+										</label>
+									</li>
+								</ul>
+							</details>
+						</div>
+
+						<!-- PERSON LOGIN -->
+						<div class="person_cont rtl d-none d-xl-block">
+							<i class="bi bi-person-lines-fill h1 text-white"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ======== HEADER END ======== -->
+
+		<!-- ======== BODY START ======== -->
+		<div class="body_container institude rtl">
+			<div class="page_inner body_part pt-4 pb-5 px-4">
+				<div class="container-fluid position-relative">
+					<div class="d-flex">
+						<div class="w-100">
+							<!-- BACK -->
+							<div>
+								<div class="back_btn">
+									<img src="./assets/images/back_arr.png" alt="" />
+								</div>
+								<p class="mt-3">
+									<span class="fw500 h4">ברוך הבא דוד,</span><br />
+									בחר באפשרות המנוי המועדפת עליך:
+								</p>
+							</div>
+							<!-- BACK -->
+
+							<div class="cal_details">
+								<div
+									class="
+										d-flex
+										flex-column flex-md-row
+										justify-content-between
+										py-3
+										rounded-1
+									"
+								>
+									<div
+										class="
+											d-flex
+											flex-column
+											align-items-center
+											p-4
+											rounded-3
+											border border-1
+										"
+									>
+										<p class="mb-2 h6 fw500 text-center">
+											0-100 <br />
+											משתמשים
+										</p>
+										<h4 class="text-info mb-0 fw500">$7 לכל מושב</h4>
+									</div>
+									<div
+										class="
+											d-flex
+											flex-column
+											mt-3 mt-md-0
+											mx-0 mx-md-3
+											align-items-center
+											p-4
+											rounded-3
+											border border-1
+										"
+									>
+										<p class="mb-2 h6 fw500 text-center">
+											100-500
+											<br />
+											משתמשים
+										</p>
+										<h4 class="text-info mb-0 fw500">$6 לכל מושב</h4>
+									</div>
+									<div
+										class="
+											d-flex
+											flex-column
+											mt-3 mt-md-0
+											ms-0 ms-md-3
+											align-items-center
+											p-4
+											rounded-3
+											border border-1
+										"
+									>
+										<p class="mb-2 h6 fw500 text-center">
+											500-1000
+											<br />
+											משתמשים
+										</p>
+										<h4 class="text-info mb-0 fw500">$5 לכל מושב</h4>
+									</div>
+									<div
+										class="
+											d-flex
+											flex-column
+											mt-3 mt-md-0
+											align-items-center
+											p-4
+											rounded-3
+											border border-1
+										"
+									>
+										<p class="mb-2 h6 fw500 text-center">
+											500-1000
+											<br />
+											משתמשים
+										</p>
+										<h4 class="text-info mb-0 fw500">צור קשרקשר</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="select_boxes d-flex">
+								<div class="w-100 selectdiv">
+									<select class="px-2 w-100 mt-3 w-100">
+										<option value="Gender">מספר משתמשים</option>
+										<option value="Gender">מספר משתמשים</option>
+										<option value="Gender">מספר משתמשים</option>
+									</select>
+								</div>
+								<div class="w-100 selectdiv me-3">
+									<select class="px-2 w-100 mt-3 w-100">
+										<option value="Gender">ל...</option>
+										<option value="Gender">ל...</option>
+										<option value="Gender">ל...</option>
+									</select>
+								</div>
+							</div>
+
+							<div
+								class="
+									bottom_color
+									d-flex
+									flex-column flex-md-row
+									align-items-center
+									mt-3
+								"
+							>
+								<div
+									class="
+										inner_bottom_color
+										d-flex
+										flex-column flex-md-row
+										justify-content-between
+										align-items-center
+										w-100
+										rounded-3
+										px-3
+									"
+								>
+									<div class="d-flex align-items-center">
+										<p class="mb-0">סיכום:</p>
+										<div
+											class="
+												cal_info
+												py-2
+												pe-2 pe-md-3
+												ps-3
+												d-flex
+												ms-0 ms-md-2
+											"
+										>
+											<div class="d-flex align-items-center ps-3">
+												<i class="bi bi-person h5 mb-0"></i>
+												<h5 class="color1 mb-0 mx-1">465</h5>
+												משתמשים
+											</div>
+											<div class="d-flex align-items-center pe-1 pe-md-3">
+												<i class="bi bi-calendar3 ms-1"></i>
+												ל
+												<h5 class="color1 mb-0 mx-1">2</h5>
+												שנים
+											</div>
+										</div>
+									</div>
+									<div class="d-flex pb-1 pb-md-0">
+										<div class="d-none d-md-block line_"></div>
+										<h6 class="fw-bold mb-0 pe-3">עלות כוללת: $8374</h6>
+									</div>
+								</div>
+								<div class="me-2 mt-3 mt-md-0">
+									<button
+										class="px-4 py-2 bg_color1 text-white border-0 rounded-3"
+									>
+										לִקְנוֹת
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="d-none d-md-block">
+							<img src="./assets/images/uni1.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ======== BODY END ======== -->
+
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				pagination: {
+					el: ".swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+
+			function w3_open() {
+				document.getElementById("mySidebar").style.display = "block";
+				document.getElementById("hamb").style.display = "none";
+				document.getElementById("cross").style.display = "block";
+			}
+
+			function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+				document.getElementById("cross").style.display = "none";
+				document.getElementById("hamb").style.display = "block";
+			}
+		</script>
+	</body>
+</html>

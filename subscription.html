@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- == EXTERNAL LINKS START == -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<!-- == EXTERNAL LINKS END == -->
+		<title>Page one</title>
+	</head>
+	<body>
+		<!-- ======== MODAL START ======== -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog subs_modal">
+				<div class="modal-content">
+					<div class="container-fluid rtl">
+						<div
+							class="
+								d-flex
+								justify-content-between
+								align-items-start
+								py-3
+								px-0 px-md-3
+								w-100
+							"
+						>
+							<div class="w-100">
+								<h2 class="color1 fw-light mt-3">תודה לך, דן!</h2>
+								<div
+									class="
+										d-flex
+										flex-column flex-md-row
+										align-items-start align-items-md-center
+									"
+								>
+									<p class="mb-0 fw-light">זה עתה רכשת מנוי עבור:</p>
+									<div class="cal_info py-2 px-3 d-flex me-2">
+										<div class="d-flex align-items-center ps-3">
+											<i class="bi bi-person h5 mb-0"></i>
+											<h5 class="color1 mb-0 mx-1">465</h5>
+											משתמשים
+										</div>
+										<div class="line_"></div>
+										<div class="d-flex align-items-center pe-3">
+											<i class="bi bi-calendar3 ms-1"></i>
+											ל
+											<h5 class="color1 mb-0 mx-1">2</h5>
+											שנים
+										</div>
+									</div>
+								</div>
+
+								<p class="mb-0 fw-light mt-4">הנה קישור לרישום התלמידים שלך:</p>
+								<div
+									class="
+										copy_text
+										d-flex
+										align-items-center
+										w-100
+										mt-3
+										mb-2
+										py-2
+										px-3
+									"
+								>
+									<p class="mb-0 overflow-auto">
+										www.vayikra.com/ins14/sdfl;#j$;lm3456467568sdgfdfghsd
+									</p>
+									<i class="me-2 bi bi-files"></i>
+								</div>
+
+								<p class="mb-0 fw-light small">
+									*ניתן למצוא קישור זה גם ב-
+									<span class="color1">חֶשְׁבּוֹן</span> עמוד.
+								</p>
+
+								<button
+									class="px-4 py-2 text-white bg_color1 rounded-3 border-0 mt-5"
+								>
+									בוצע
+								</button>
+							</div>
+							<button
+								type="button"
+								class="btn-close h4"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ======== MODAL END ======== -->
+
+		<!-- ======== SIDEBAR START ======== -->
+		<div
+			class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left"
+			style="width: 300px"
+			id="mySidebar"
+		>
+			<br />
+			<ul class="d-flex flex-column list-unstyled mb-0 px-3">
+				<li class="py-2">
+					<a
+						class="text-uppercase text-decoration-none color1 fw600 f20"
+						href=""
+						>תוֹרָה</a
+					>
+				</li>
+				<li class="py-2">
+					<a
+						class="text-uppercase text-decoration-none color1 fw600 f20"
+						href=""
+						>פרשוט</a
+					>
+				</li>
+				<li class="py-2">
+					<a
+						class="text-uppercase text-decoration-none color1 fw600 f20"
+						href=""
+						>סיפורים</a
+					>
+				</li>
+				<li class="py-2">
+					<a
+						class="text-uppercase text-decoration-none color1 fw600 f20"
+						href=""
+						>יותר...</a
+					>
+				</li>
+				<li class="py-2">
+					<div class="person_cont">
+						<i class="bi bi-person-lines-fill h1 color1"></i>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- ======== SIDEBAR END ======== -->
+
+		<!-- ======== HEADER START ======== -->
+		<div class="header_container bg_color1 rtl">
+			<div class="page_inner w-100">
+				<div class="container-fluid w-100">
+					<div class="d-flex justify-content-between align-items-center w-100">
+						<div class="d-flex align-items-center">
+							<div class="logo_container">
+								<div class="d-flex align-items-center">
+									<!-- HAMBERGER -->
+									<div class="d-block d-md-none">
+										<i
+											id="hamb"
+											onclick="w3_open()"
+											class="bi bi-list text-white display-4"
+										></i>
+										<i
+											style="display: none"
+											id="cross"
+											onclick="w3_close()"
+											class="bi bi-plus-lg text-white display-4"
+										></i>
+									</div>
+									<!-- HAMBERGER -->
+
+									<a class="text-decoration-none" href="index.html">
+										<h1 class="text-white mb-0">סֵמֶל</h1>
+										<!-- <img data-aos="zoom-in" src="./assets/images/logo.svg" alt="" /> -->
+									</a>
+								</div>
+							</div>
+							<div class="nav_container d-none d-md-block ms-4">
+								<ul class="d-flex list-unstyled mb-0">
+									<li>
+										<a class="text-white text-uppercase" href="index.html"
+											>תוֹרָה</a
+										>
+									</li>
+									<li>
+										<a
+											class="active text-white text-uppercase"
+											href="contact.html"
+											>פרשוט</a
+										>
+									</li>
+									<li>
+										<a class="text-white text-uppercase" href="service.html"
+											>סיפורים</a
+										>
+									</li>
+									<li>
+										<a class="text-white text-uppercase" href="">יותר...</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div
+							class="
+								d-flex
+								flex-column
+								align-items-center
+								justify-content-center
+							"
+						>
+							<details class="custom-select">
+								<summary class="radios">
+									<input
+										type="radio"
+										name="item"
+										id="default"
+										title="עברית"
+										checked
+									/>
+									<input type="radio" name="item" id="עברית" title="עברית" />
+									<input
+										type="radio"
+										name="item"
+										id="English"
+										title="English"
+									/>
+								</summary>
+								<ul class="list">
+									<li>
+										<label
+											class="
+												d-flex
+												align-items-center
+												justify-content-between
+												w-100
+												ltr
+											"
+											for="עברית"
+										>
+											<a
+												class="
+													text-decoration-none text-dark
+													d-flex
+													align-items-center
+													justify-content-between
+													w-100
+												"
+												href="subscription.html"
+											>
+												עברית <img src="./assets/images/israel.jpg" alt="" />
+											</a>
+										</label>
+									</li>
+									<li>
+										<label
+											class="
+												d-flex
+												align-items-center
+												justify-content-between
+												w-100
+												ltr
+											"
+											for="English"
+										>
+											<a
+												class="
+													text-decoration-none text-dark
+													d-flex
+													align-items-center
+													justify-content-between
+													w-100
+												"
+												href="subscription.en.html"
+											>
+												English <img src="./assets/images/united.png" alt="" />
+											</a>
+										</label>
+									</li>
+								</ul>
+							</details>
+						</div>
+
+						<!-- PERSON LOGIN -->
+						<div class="person_cont rtl d-none d-xl-block">
+							<i class="bi bi-person-lines-fill h1 text-white"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ======== HEADER END ======== -->
+
+		<!-- ======== BODY START ======== -->
+		<div class="body_container subs_container rtl">
+			<div class="page_inner body_part py-4 px-4 d-flex">
+				<div class="container-fluid position-relative">
+					<!-- BACK -->
+					<div class="position-absolute end-0">
+						<div class="back_btn">
+							<img src="./assets/images/back_arr.png" alt="" />
+						</div>
+						<p class="mt-3">
+							<span class="text-secondary">ברוך הבא דוד,</span><br />
+							כדי להתחיל להשתמש ב- Vayikra <br />
+							נא לקנות חבילה:
+						</p>
+					</div>
+					<!-- BACK -->
+
+					<div
+						class="
+							card_container
+							d-flex
+							flex-column flex-md-row
+							justify-content-center
+							align-items-end
+							h-100
+						"
+					>
+						<div class="subs_card py-4 text-center rounded-3">
+							<h5>מנוי חודשי</h5>
+							<h4 class="mt-5">$8 <span>/ חוֹדֶשׁ</span></h4>
+							<p class="fw-light text-secondary">חידוש אוטומטי</p>
+							<h5 class="my-5">קריאה ללא הגבלה</h5>
+							<button
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								class="px-5 py-1 border-0 rounded-3 bg_color1 text-white"
+							>
+								לִקְנוֹת
+							</button>
+						</div>
+						<div class="mt-4 mt-md-0 subs_card py-4 text-center rounded-3 me-3">
+							<h5>מנוי שנתי</h5>
+							<h4 class="mt-5">$8 <span>/ חוֹדֶשׁ</span></h4>
+							<p class="fw-light text-secondary">שׁוּלָם מִרֹאשׁ</p>
+							<h5 class="my-5">קריאה ללא הגבלה</h5>
+							<button
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								class="px-5 py-1 border-0 rounded-3 bg_color1 text-white"
+							>
+								לִקְנוֹת
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ======== BODY END ======== -->
+
+		<!-- Swiper JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			function w3_open() {
+				document.getElementById("mySidebar").style.display = "block";
+				document.getElementById("hamb").style.display = "none";
+				document.getElementById("cross").style.display = "block";
+			}
+
+			function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+				document.getElementById("cross").style.display = "none";
+				document.getElementById("hamb").style.display = "block";
+			}
+		</script>
+	</body>
+</html>
